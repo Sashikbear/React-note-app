@@ -1,0 +1,12 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	font-family: "Baloo Tammudu 2", cursive;
+	background-color: #e6f1f3;
+}
+
+code {
+	font-family: "Baloo Tammudu 2", cursive;
+}
