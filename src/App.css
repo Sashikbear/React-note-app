@@ -1,9 +1,8 @@
 .App {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	font-family: "Baloo Tammudu 2", cursive;
-	width: 60%;
+	width: 1000px;
 	border-radius: 10px;
 	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
 	margin: 50px;
@@ -11,6 +10,7 @@
 	background-color: #e6f1f3;
 }
 .text-area {
+	width: 400px;
 	border: #e6f1f3;
 	border-radius: 10px;
 	background-color: #e6f1f3;
@@ -45,16 +45,15 @@
 .note-list {
 	margin-top: 20px;
 	display: grid;
-	justify-content: center;
 	grid-template-columns: auto auto auto;
 	grid-gap: 20px;
 }
 .note-item {
+	width: 300px;
 	border: 3px solid #304168;
 	box-shadow: 0px 0px 16px #d9d3d0;
 	background-color: #e6f1f3;
 	border-radius: 10px;
-	display: inline;
 	text-align: center;
 	word-wrap: break-word;
 	padding: 10px;
@@ -84,6 +83,7 @@
 	color: #e6f1f3;
 	background-color: #304168;
 	border-radius: 10px;
+	height: 30px;
 }
 .input-area {
 	display: flex;
@@ -148,4 +148,26 @@
 }
 .update-button:hover {
 	border: 3px solid #304168;
+}
+@media only screen and (max-width: 480px) {
+	.App {
+		width: 105%;
+	}
+	.text-area {
+		width: 400px;
+	}
+	.form {
+		width: 90%;
+	}
+	.note-list {
+		width: 90%;
+		margin-top: 10px;
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: center;
+		grid-gap: 5px;
+	}
+	.note-item {
+		width: 220px;
+	}
 }
